@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+	min-height: 100vh;
+	position: relative;
+	font-family: sans-serif;
+}
+
+.container.quotes {
+	text-align: center;
+	  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a~button {
+  width: 250px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  margin: 0 -125px;
+}
+
+    </style>
+</head>
+<body>
+    <a href="/"><button>Click to reload</button</a>
+
+
+<script>
+
+var myArray = [
+"<div class='container quotes'>\
+<div><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>\
+</div>\
+<p>\
+I love it\
+</p><p>\
+Craig, AZ\
+</p></div>",
+
+"<div class='container quotes'>\
+<div><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>\
+</div>\
+<p>\
+Sometimes I call in sick just so I can use it\
+</p><p>\
+Brit, TX\
+</p></div>",
+
+"<div class='container quotes'>\
+<div><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>\
+</div>\
+<p>\
+II built a deck for mine and its rad\
+</p><p>\
+Britney, NM\
+</p></div>",
+
+"<div class='container quotes'>\
+<div><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>\
+</div>\
+<p>\
+I couldn't make it through the work week without mine\
+</p><p>\
+Baart, HI\
+</p></div>",
+
+"<div class='container quotes'>\
+<div><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span><span>&#9734;</span>\
+</div>\
+<p>\
+Sometimes I sit at work thinking about mine wondering if its sitting in my back yard thinking about me\
+</p><p>\
+Tom D. Poway, CA\
+</p></div>",
+
+"<div class='container quotes'>\
+<div><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span>\
+</div>\
+<p>\
+No one told me it would be this great\
+</p><p>\
+Mike, Fl\
+</p></div>",
+];
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+document.body.innerHTML = randomItem;
+</script>
+</body>
+</html>
